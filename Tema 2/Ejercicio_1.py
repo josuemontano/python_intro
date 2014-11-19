@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Ejercicio 1
-# Sucesion de Fibonacci
+# Sucesión de Fibonacci
 
 
 def obtener_sucesion_fibonacci(n):
-    """ Devuelve una lista con todos los x pertenecientes a la sucesion de Fibonacci
-        tales que x > n
+    """ Devuelve una lista con todos los x pertenecientes a la sucesión de
+        Fibonacci tales que x > n
     """
     sucesion = []
     a, x = 0, 1
@@ -14,3 +14,5 @@ def obtener_sucesion_fibonacci(n):
         sucesion.append(x)
         a, x = x, a + x
     return sucesion
+
+print(obtener_sucesion_fibonacci(180))
