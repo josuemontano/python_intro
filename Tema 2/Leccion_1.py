@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
-# Leccion 1
-# Tipos de datos
+# Lección 1
+# Tipos de datos primitivos
 
 
-# Numeros
+# Numéricos
 entero_positivo = 5
 entero_negativo = -1
 flotante = 1.35

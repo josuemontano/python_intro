@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 4
-# Operaciones aritmeticas
+# Operaciones aritméticas
 
 suma = 5 + 2
 resta = 5 - 2

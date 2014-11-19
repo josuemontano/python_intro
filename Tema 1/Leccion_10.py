@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 10
-# Funciones del modulo math
+# Funciones del módulo math
 
 from math import *
 
@@ -19,7 +19,7 @@ y = e
 fmod(x, y)  # Preferible para floats, x % y preferible para enteros
 
 
-# Funciones trigonometricas
+# Funciones trigonométricas
 x = pi
 cos(x)
 sin(x)
@@ -30,20 +30,23 @@ acos(x)
 asin(x)
 atan(x)
 
-# Funciones hiperbolicas
+
+# Funciones hiperbólicas
 x = e
 cosh(x)
 sinh(x)
 tanh(x)
 
-x =
+x = 1
 acosh(x)
 asinh(x)
-atanh(x)
+atanh(0)
+
 
 # Conversion de angulos
 degrees(pi)
 radians(90)
+
 
 # Funciones logaritmicas y exponenciales
 x = 9

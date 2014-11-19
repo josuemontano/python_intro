@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 6
-# Declaracion de funciones
+# Declaración de funciones
 
 
 def calcular_pi():

@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 8
-# Importacion de modulos
+# Importación de módulos
 
 from math import pi
 
 
 def calcular_volumen_esfera():
-    """ Funcion que calcula el volumen de una esfera
+    """ Función que calcula el volumen de una esfera
         de radio 7
         V = (4/3)πr^3
     """

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 2
-# Declaracion de variables
+# Asignación de nombres o variables
 
 pi = 3.14159265359

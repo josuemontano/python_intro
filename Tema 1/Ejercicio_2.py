@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Ejercicio 2
-# Resolucion de triangulos: regla de senos
+# Resolución de triangulos: regla de senos
 
 from math import degrees
 from math import acos
