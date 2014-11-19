@@ -20,12 +20,12 @@ class Vector(object):
         return math.sqrt(self.x ** 2 + self.y ** 2)
 
     def sumar(self, vector):
-        """ Suma un vector a este vector """
+        """ Suma un vector a self """
         self.x += vector.x
         self.y += vector.y
 
     def multiplicar(self, escalar):
-        """ Multiplica un escalar a este vector """
+        """ Multiplica un escalar a self """
         self.x *= escalar
         self.y *= escalar
 

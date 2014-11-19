@@ -9,7 +9,7 @@ from tema_3.Leccion_1 import Vector
 
 class VectorRandomico(Vector):
     def __init__(self, rango_x=(0, 1), rango_y=(0, 1)):
-        """ Construye un vector randomico """
+        """ Construye un vector randómico """
         super().__init__()
         self.x = float(random.randrange(rango_x[0], rango_x[1]))
         self.y = float(random.randrange(rango_y[0], rango_y[1]))

@@ -4,7 +4,7 @@
 # Números de Armstrong
 
 
-def es_numero_Armstrong(n):
+def es_numero_armstrong(n):
     """ Verifica si el número n dado es un número de Armstrong"""
     suma = 0
     temp = n
@@ -19,7 +19,7 @@ try:
 except ValueError:
     print("El valor que introdujo no es un número")
 else:
-    if es_numero_Armstrong(numero):
+    if es_numero_armstrong(numero):
         print("En número", numero, "es un número de Armstrong")
     else:
         print("En número", numero, "no es un número de Armstrong")
