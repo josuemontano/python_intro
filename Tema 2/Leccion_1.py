@@ -3,18 +3,26 @@
 # Lección 1
 # Tipos de datos primitivos
 
-
 # Numéricos
 entero_positivo = 5
-entero_negativo = -1
-flotante = 1.35
+type(entero_positivo)
 
+entero_negativo = -1
+type(entero_negativo)
+
+flotante = 1.35
+type(flotante)
 
 # Caracteres y cadenas
 caracter = 'C'
-cadena = "Cadena de caracteres"
+type(caracter)
 
+cadena = "Cadena de caracteres"
+type(cadena)
 
 # Booleanos
 veradero = True
+type(veradero)
+
 falso = False
+type(falso)

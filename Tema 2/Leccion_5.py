@@ -25,8 +25,11 @@ print(fibonacci)
 fibonacci.index(21)
 fibonacci.count(1)
 
-fibonacci.pop()
+fibonacci.extend([89, 144])
 print(fibonacci)
+
+x = fibonacci.pop()
+print(fibonacci, x)
 
 # Lista vacia
 vacia = []
