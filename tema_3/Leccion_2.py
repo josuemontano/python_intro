@@ -15,8 +15,9 @@ class Vector(object):
 
 
 if __name__ == '__main__':
-    velocidad = Vector(0.9, 5)
-    print(velocidad.x, velocidad.x)
+    velocidad = Vector()
+    print(velocidad.x, velocidad.y)
 
     aceleracion = Vector(2, 0.4)
-    print(aceleracion.x, aceleracion.x)
+    aceleracion.x = 1.4
+    print(aceleracion.x, aceleracion.y)
