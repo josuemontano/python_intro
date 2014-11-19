@@ -6,7 +6,7 @@
 suma = 5 + 2
 resta = 5 - 2
 multiplicacion = 5 * 2
-division = 5/2
+division = 5 / 2
 
 resto = 5 % 2
 cociente = 5 // 2

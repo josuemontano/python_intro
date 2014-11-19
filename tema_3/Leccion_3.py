@@ -13,5 +13,5 @@ print(a + b)
 print(a * b)
 
 with localcontext() as ctx:
-   ctx.prec = 50
-   print(Decimal('1') / Decimal('9'))
+    ctx.prec = 50
+    print(Decimal('1') / Decimal('9'))

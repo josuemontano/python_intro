@@ -9,6 +9,6 @@ def cuadrados(n):
         0 <= x < n
     """
     for x in range(n):
-        print(x**2)
+        print(x ** 2)
 
 cuadrados(30)
