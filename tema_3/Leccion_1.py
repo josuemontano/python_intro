@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Introducción al lenguaje de programacion Python
+# Programación orientada a objetos
 # Lección 1
 # Objetos y clases
 
@@ -33,11 +33,11 @@ class Vector(object):
         self.x /= self.magnitud()
         self.y /= self.magnitud()
 
+if __name__ == '__main__':
+    velocidad = Vector(14.2, 18)
+    print(velocidad.magnitud())
 
-velocidad = Vector(14.2, 18)
-print(velocidad.magnitud())
-
-velocidad.sumar(Vector(5, 1))
-velocidad.multiplicar(2.1)
-velocidad.normalizar()
-print(velocidad)
+    velocidad.sumar(Vector(5, 1))
+    velocidad.multiplicar(2.1)
+    velocidad.normalizar()
+    print(velocidad)
