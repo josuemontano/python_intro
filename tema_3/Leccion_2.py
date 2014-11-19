@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*-
 # Programación orientada a objetos
 # Lección 2
-# Herencia
+# Constructor
 
-import random
-from tema_3.Leccion_1 import Vector
+import math
 
 
-class VectorRandomico(Vector):
-    def __init__(self, rango_x=(0, 1), rango_y=(0, 1)):
-        """ Construye un vector randómico """
-        super().__init__()
-        self.x = float(random.randrange(rango_x[0], rango_x[1]))
-        self.y = float(random.randrange(rango_y[0], rango_y[1]))
+class Vector(object):
+    """ Vector de 2D """
+
+    def __init__(self, x=0.0, y=0.0):
+        self.x = x
+        self.y = y
+
 
 if __name__ == '__main__':
-    velocidad = VectorRandomico((0, 100), (0, 100))
-    print(velocidad.magnitud())
+    velocidad = Vector(0.9, 5)
+    print(velocidad.x, velocidad.x)
 
-    velocidad.sumar(VectorRandomico())
-    velocidad.multiplicar(2.1)
-    velocidad.normalizar()
-    print(velocidad)
+    aceleracion = Vector(2, 0.4)
+    print(aceleracion.x, aceleracion.x)

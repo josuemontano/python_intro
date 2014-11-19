@@ -1,20 +1,24 @@
 # -*- coding: utf-8 -*-
 # Programación orientada a objetos
 # Lección 4
-# Módulo fractions
+# Herencia
 
-from fractions import Fraction
+import random
+from tema_3.Leccion_3 import Vector
 
 
-a = Fraction(5, 4)
-b = Fraction(7, 16)
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
+class VectorRandomico(Vector):
+    def __init__(self, rango_x=(0, 1), rango_y=(0, 1)):
+        """ Construye un vector randómico """
+        super().__init__()
+        self.x = float(random.randrange(rango_x[0], rango_x[1]))
+        self.y = float(random.randrange(rango_y[0], rango_y[1]))
 
-print(a.numerator)
-print(a.denominator)
+if __name__ == '__main__':
+    velocidad = VectorRandomico((0, 100), (0, 100))
+    print(velocidad.magnitud())
 
-c = a + b
-print(float(c))
+    velocidad.sumar(VectorRandomico())
+    velocidad.multiplicar(2.1)
+    velocidad.normalizar()
+    print(velocidad)
