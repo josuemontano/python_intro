@@ -9,7 +9,7 @@ from math import radians
 
 
 def teorema_cosenos(a, b, gamma):
-    """ Resulve un triángulo aplicando el teorema de cosenos
+    """ Resuelve un triángulo aplicando el teorema de cosenos
         c^2 = a^2 + b^2 - 2ab*cos(gamma)
     """
     gamma = radians(gamma)

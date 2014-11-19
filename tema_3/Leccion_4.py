@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Programación orientada a objetos
 # Lección 4
-# Módulo Fraction
+# Módulo fractions
 
 from fractions import Fraction
 
