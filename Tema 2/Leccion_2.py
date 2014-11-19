@@ -1,5 +1,6 @@
-# Introduccion al lenguaje de programacion Python
-# Leccion 2
+# -*- coding: utf-8 -*-
+# Introducción al lenguaje de programacion Python
+# Lección 2
 # Cadenas
 
 print("Por favor introduce tu nombre completo")

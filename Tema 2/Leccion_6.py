@@ -1,5 +1,6 @@
-# Introduccion al lenguaje de programacion Python
-# Leccion 6
+# -*- coding: utf-8 -*-
+# Introducción al lenguaje de programacion Python
+# Lección 6
 # Listas
 
 fibonacci = [2, 34, 5, 1, 21, 3, 8, 13, 4]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Ejercicio 1
 # Teorema de pitagoras

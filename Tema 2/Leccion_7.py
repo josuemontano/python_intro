@@ -1,5 +1,6 @@
-# Introduccion al lenguaje de programacion Python
-# Leccion 7
+# -*- coding: utf-8 -*-
+# Introducción al lenguaje de programacion Python
+# Lección 7
 # Accediento a listas
 
 fibonacci = [1, 1, 2, 3, 4, 5, 8, 13, 21, 34]

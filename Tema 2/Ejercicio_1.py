@@ -1,4 +1,5 @@
-# Introduccion al lenguaje de programacion Python
+# -*- coding: utf-8 -*-
+# Introducción al lenguaje de programacion Python
 # Ejercicio 1
 # Sucesion de Fibonacci
 

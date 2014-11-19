@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 # Programación interactiva en Python
-# Leccion 9
+# Lección 9
 # Parametros de funciones
 
 from math import pi

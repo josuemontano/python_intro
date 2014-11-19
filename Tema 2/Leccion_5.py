@@ -1,5 +1,6 @@
-# Introduccion al lenguaje de programacion Python
-# Leccion 5
+# -*- coding: utf-8 -*-
+# Introducción al lenguaje de programacion Python
+# Lección 5
 # Estructuras de control de flujo - for
 
 

@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 # Programación interactiva en Python
-# Leccion 10
+# Lección 10
 # Funciones del modulo math
 
 from math import *
@@ -15,7 +16,7 @@ floor(x)
 
 x = pi
 y = e
-fmod(x, y) # Preferible para floats, x % y preferible para enteros
+fmod(x, y)  # Preferible para floats, x % y preferible para enteros
 
 
 # Funciones trigonometricas
@@ -56,4 +57,4 @@ log1p(x)  # log(1 + x, e)
 x = 2
 y = 5
 sqrt(x)
-pow (x, y)
+pow(x, y)

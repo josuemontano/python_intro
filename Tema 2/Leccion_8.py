@@ -1,5 +1,6 @@
-# Introduccion al lenguaje de programacion Python
-# Leccion 8
+# -*- coding: utf-8 -*-
+# Introducción al lenguaje de programacion Python
+# Lección 8
 # Listas de listas
 
 lista = [[1, 2, 4], [1, 1], [], [6]]

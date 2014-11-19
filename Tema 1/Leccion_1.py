@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 # Programación interactiva en Python
-# Leccion 1
+# Lección 1
 # Hello World
 
 print("Hello, World!")

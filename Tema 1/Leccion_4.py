@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 # Programación interactiva en Python
-# Leccion 4
+# Lección 4
 # Operaciones aritmeticas
 
 suma = 5 + 2
@@ -11,4 +12,3 @@ resto = 5 % 2
 cociente = 5 // 2
 
 exponenciacion = 5 ** 2
-

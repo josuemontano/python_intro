@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 # Programación interactiva en Python
-# Leccion 8
+# Lección 8
 # Importacion de modulos
 
 from math import pi
