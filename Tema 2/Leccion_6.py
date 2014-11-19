@@ -1,33 +1,18 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Lección 6
-# Listas
+# Accediendo a los valores de una lista
 
-fibonacci = [2, 34, 5, 1, 21, 3, 8, 13, 4]
-len(fibonacci)
+fibonacci = [1, 1, 2, 3, 4, 5, 8, 13, 21, 34]
 
-fibonacci.sort()
+print(fibonacci[0])
+print(fibonacci[3:])
+print(fibonacci[:3])
+print(fibonacci[2:7])
+
+fibonacci[3:6] = []
 print(fibonacci)
 
-fibonacci.reverse()
-print(fibonacci)
-
-fibonacci.remove(4)
-print(fibonacci)
-
-fibonacci.append(55)
-print(fibonacci)
-
-fibonacci.sort()
-fibonacci.insert(0, 1)
-print(fibonacci)
-
-fibonacci.index(21)
-fibonacci.count(1)
-
-fibonacci.pop()
-print(fibonacci)
-
-# Lista vacia
-vacia = []
-len(vacia)
+copia = fibonacci[:]
+copia.reverse()
+print(copia, fibonacci)

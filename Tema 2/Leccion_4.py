@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
-# Lección 4
-# Estructuras de control de flujo - if
+# Lección 3
+# Estructuras de control de flujo - while
 
 
-def verificar_calificacion(calificacion=0):
-    """ Si la calificacion es mayor o igual a 51 devuelve 'Aprobado', 
-        'Reprobado' de lo contrario
+def obtener_sucesion_fibonacci(n):
+    """ Imprime todos los x pertenecientes a la sucesion de Fibonacci
+        tales que x > n
     """
-    if calificacion >= 51:
-        return "Aprobado"
-    else:
-        return "Reprobado"
+    a = 0
+    x = 1
+    while x < n:
+        print(x)
+        tmp = x
+        x = x + a
+        a = tmp
 
-
-calificacion = input()
-verificar_calificacion(calificacion)
-verificar_calificacion()
+obtener_sucesion_fibonacci(50)

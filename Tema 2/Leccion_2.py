@@ -3,7 +3,7 @@
 # Lección 2
 # Cadenas
 
-print("Por favor introduce tu nombre completo")
+print("Por favor introduzca su nombre completo:")
 nombre = input()
 
 print("Bienvenido, " + nombre + "!")

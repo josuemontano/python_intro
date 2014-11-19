@@ -1,15 +1,19 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Lección 3
-# Estructuras de control de flujo - while
+# Estructuras de control de flujo - if
 
 
-def obtener_sucesion_fibonacci(n):
-    """ Imprime todos los x pertenecientes a la sucesion de Fibonacci
-        tales que x > n 
-    """
-    a = 0
-    x = 1
-    while x < n:
-        print(x)
-        a, x = x, a + x
+def es_par(n):
+    """ Verifica si el numero n dado es par """
+    if (n % 2) == 0 and n >= 0:
+        return True
+    else:
+        return False
+
+
+numero = int(input("Introduzca un numero: "))
+if es_par(numero):
+    print(numero, "es par")
+else:
+    print(numero, "es impar")
