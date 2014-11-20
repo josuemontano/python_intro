@@ -18,8 +18,7 @@ print(a.numerator)
 print(a.denominator)
 print(a.limit_denominator(50))
 
-c = a + b
-print(float(c))
+print(float(a + b))
 print(gcd(10, 6))
 
 
