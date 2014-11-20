@@ -1,20 +1,39 @@
 # -*- coding: utf-8 -*-
 # NumPy
 # Lección 2
-# Operaciones con matrices
+# Matrices
 
-from numpy import array
-from numpy import sqrt
+import numpy
 
 
-a = array([[1, 0, 1], [3, 0, 6]], float)
-b = array([[9, 4, 3], [5, 2, 8]], float)
+matriz = numpy.array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
+print(matriz, type(matriz))
 
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
+print(matriz.sum())
+print(matriz.prod())
 
-print(a ** b)
-print(sqrt(a))
+print(matriz.diagonal())
+print(matriz.transpose())
+print(matriz.conj())
+
+print(matriz.mean())
+print(matriz.var())
+print(matriz.std())
+
+
+x = numpy.zeros((3, 2))
+print(x, type(x))
+
+x = numpy.zeros_like(matriz)
+print(x, type(x))
+
+
+x = numpy.ones((4, 3), dtype=int)
+print(x, type(x))
+
+x = numpy.ones_like(matriz)
+print(x, type(x))
+
+
+x = numpy.identity(10)
+print(x, type(x))
