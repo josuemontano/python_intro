@@ -11,3 +11,5 @@ class Vector(object):
 if __name__ == '__main__':
     velocidad = Vector()
     type(velocidad)
+    
+    print(velocidad)

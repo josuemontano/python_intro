@@ -13,7 +13,7 @@ def es_par(n):
 
 
 numero = int(input("Introduzca un numero: "))
-if es_par(numero):
-    print(numero, "es par")
-else:
+if not es_par(numero):
     print(numero, "es impar")
+else:
+    print(numero, "es par")

@@ -34,3 +34,6 @@ print(fibonacci, x)
 # Lista vacía
 vacia = []
 print(len(vacia))
+
+vacia += [-2, -1, 0]
+print(vacia)

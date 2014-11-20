@@ -21,8 +21,8 @@ print(lista)
 lista.insert(0, [2, [], 0])
 print(lista)
 
-lista.index([1, 1])
-lista.count([])
+print(lista.index([1, 1]))
+print(lista.count([]))
 
 lista.pop()
 print(lista)

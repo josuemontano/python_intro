@@ -4,6 +4,7 @@
 # Módulo fractions
 
 from fractions import Fraction
+from fractions import gcd
 
 
 a = Fraction(5, 4)
@@ -15,6 +16,19 @@ print(a / b)
 
 print(a.numerator)
 print(a.denominator)
+print(a.limit_denominator(50))
 
 c = a + b
 print(float(c))
+print(gcd(10, 6))
+
+
+# Otros constructores
+a = Fraction('7e-6')
+print(a)
+
+a = Fraction(10.5)
+print(a)
+
+a = Fraction('-9/2')
+print(a)
