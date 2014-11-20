@@ -53,6 +53,12 @@ docs/_build/
 # PyBuilder
 target/
 
+# Mac OS X
+.DS_Store
+.Spotlight-V100
+.Trashes
+
 # PyCharm
 .idea/
-.idea
+*.iml
+*.iws
