@@ -10,3 +10,5 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 **Tema 3.** Programaci&oacute;n orientada a objetos. Fundamentos de la POO.
 
 **Tema 4.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. IPython y SciPy.
+
+La carpeta themes contiene algunas preferencias para PyCharm y SublimeText 3 listas para importar.
