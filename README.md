@@ -11,4 +11,6 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 
 **Tema 4.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. IPython y SciPy.
 
-La carpeta themes contiene algunas preferencias para PyCharm y SublimeText 3 listas para importar.
+***
+
+La carpeta `themes` contiene algunas preferencias para [PyCharm](https://www.jetbrains.com/pycharm) y [SublimeText 3](http://www.sublimetext.com/3) listas para importar.
