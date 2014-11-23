@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
 # NumPy
 # Lección 1
-# Vectores
+# Funciones del módulo
 
 import numpy
 
 
-vector = numpy.array([3.1, 10, 8.94, 0.4, 2.4])
-print(vector, type(vector))
+x = 0
+print(numpy.sin(x))
+print(numpy.cos(x))
+print(numpy.tan(x))
 
-print(vector.sum())
-print(vector.prod())
+print(numpy.exp(x))
+print(numpy.log(x))
+
+print(type(numpy.inf))
