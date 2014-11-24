@@ -1,27 +1,15 @@
 # -*- coding: utf-8 -*-
 # Herramientas de computación científica
 # Lección 4
-# NumPy: Operaciones con matrices
+# NumPy: Generación de arrays
 
-import numpy
-from numpy import array
+from numpy import arange, linspace
 
 
-a = array([[1, 0, 1], [3, 0, 6]], float)
-b = array([[9, 4, 3], [5, 2, 8]], float)
+x = arange(5, 50, 3)
+print(type(x))
+print(x)
 
-print(len(a))
-print(6 in a)
-
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
-
-print(a ** b)
-print(numpy.sqrt(a))
-
-print(a > 4)
-
-print(10 * numpy.sin(a))
+y = linspace(0, 2, 100)
+print(type(y))
+print(y)

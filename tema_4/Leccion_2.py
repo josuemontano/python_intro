@@ -9,6 +9,9 @@ import numpy
 vector = numpy.array([3.1, 10, 8.94, 0.4, 2.4])
 print(vector, type(vector))
 
+print(len(vector))
+print(6 in vector)
+
 print(vector[0])
 print(vector[1:])
 print(vector[:2])
