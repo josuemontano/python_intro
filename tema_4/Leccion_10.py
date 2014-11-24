@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# SymPy
+# Herramientas de computación científica
 # Lección 10
-# Polinomios
+# SymPy: Polinomios
 
 from sympy import expand, factor, symbols
 

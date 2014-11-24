@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# NumPy
+# Herramientas de computación científica
 # Lección 5
-# Atributos de array
+# NumPy: Atributos de array
 
 from numpy import array
 

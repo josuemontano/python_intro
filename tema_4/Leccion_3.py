@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# NumPy
+# Herramientas de computación científica
 # Lección 3
-# Matrices
+# NumPy: Matrices
 
 import numpy
 
@@ -40,3 +40,7 @@ print(x, type(x))
 
 x = numpy.identity(10)
 print(x, type(x))
+
+
+matriz.fill(0)
+print(matriz)

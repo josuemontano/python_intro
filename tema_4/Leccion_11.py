@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# SymPy
+# Herramientas de computación científica
 # Lección 11
-# Cálculo diferencial e integral
+# SymPy: Cálculo diferencial e integral
 
 from sympy import *
 

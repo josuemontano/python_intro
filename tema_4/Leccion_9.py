@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# SymPy
+# Herramientas de computación científica
 # Lección 9
-# Introducción
+# SymPy: Introducción
 
 import sympy
 

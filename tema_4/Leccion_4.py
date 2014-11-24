@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# NumPy
+# Herramientas de computación científica
 # Lección 4
-# Operaciones con matrices
+# NumPy: Operaciones con matrices
 
 import numpy
 from numpy import array
@@ -9,6 +9,9 @@ from numpy import array
 
 a = array([[1, 0, 1], [3, 0, 6]], float)
 b = array([[9, 4, 3], [5, 2, 8]], float)
+
+print(len(a))
+print(6 in a)
 
 print(a + b)
 print(a - b)

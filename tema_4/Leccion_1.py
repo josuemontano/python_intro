@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# NumPy
+# Herramientas de computación científica
 # Lección 1
-# Funciones del módulo
+# Funciones del módulo NumPy
 
 import numpy
 
@@ -15,3 +15,6 @@ print(numpy.exp(x))
 print(numpy.log(x))
 
 print(type(numpy.inf))
+
+print(numpy.pi)
+print(numpy.e)

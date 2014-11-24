@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-# NumPy
+# Herramientas de computación científica
 # Lección 6
-# Generación de arrays
+# NumPy: Generación de arrays
 
-from numpy import arange
-from numpy import linspace
+from numpy import arange, linspace
 
 
 x = arange(5, 50, 3)
