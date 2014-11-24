@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Herramientas de computación científica
 # Lección 1
-# Funciones del módulo NumPy
+# NumPy: Introducción
 
 import numpy
 
