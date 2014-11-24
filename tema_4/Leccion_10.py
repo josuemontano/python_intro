@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 # Herramientas de computación científica
 # Lección 10
-# SymPy: Polinomios
+# SymPy: Manipulación algebraica
 
-from sympy import expand, factor, symbols
+from sympy import expand, factor, simplify, symbols
 
 
 x, y = symbols("x y")
 print(x + y - x)
 print(x + 2 * y - 6 * x - 5 * x)
+
+expr = (x + x * y) / x
+print(simplify(expr))
 
 expr = x + y
 expr = x * expr
