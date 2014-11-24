@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Herramientas de computación científica
+# Herramientas para computación científica
 # Lección 4
-# NumPy: Generación de arrays
+# NumPy: Generación de colecciones
 
 from numpy import arange, linspace
 

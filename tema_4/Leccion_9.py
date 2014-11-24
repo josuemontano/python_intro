@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Herramientas de computación científica
+# Herramientas para computación científica
 # Lección 9
 # SymPy: Introducción
 
