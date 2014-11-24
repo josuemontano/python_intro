@@ -13,7 +13,7 @@ class Vector(object):
         self.x = x
         self.y = y
 
-    def __repr__(self):
+    def __str__(self):
         return str(tuple((self.x, self.y)))
 
     def magnitud(self):
