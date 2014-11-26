@@ -5,11 +5,12 @@
 
 
 def f(x):
-   return x ** 2
+    return x ** 2
 
 
 def g(fu, x):
-   return fu(x) * fu(x)
+    return fu(x) * fu(x)
 
-numero = 10
-print(g(f, x))
+if __name__ == '__main__':
+    numero = 10
+    print(g(f, numero))

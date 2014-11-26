@@ -17,6 +17,7 @@ class Persona(object):
     def __str__(self):
         return self.nombre
 
-estudiantes = [Persona("Peter", 37), Persona("Laura", 8), Persona("Paul", 22), Persona("Bruce", 18)]
-mayores_edad = filter(lambda x: x if x.edad >= 19 else None, estudiantes)
-print(list(mayores_edad))
+if __name__ == '__main__':
+    estudiantes = [Persona("Peter", 37), Persona("Laura", 8), Persona("Paul", 22), Persona("Bruce", 18)]
+    mayores_edad = filter(lambda x: x if x.edad >= 19 else None, estudiantes)
+    print(list(mayores_edad))

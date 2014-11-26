@@ -7,6 +7,7 @@
 def suma_cuadrados(a, b):
     return sum(map(lambda x: x ** 2, range(a, b + 1)))
 
-a = 0
-b = 5
-print(suma_cuadrados(a, b))
+if __name__ == '__main__':
+    a = 11
+    b = 20
+    print(suma_cuadrados(a, b))
