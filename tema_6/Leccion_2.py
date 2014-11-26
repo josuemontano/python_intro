@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 2
-# Archivos: lectura
+# Formato de cadenas
 
-import os
+x = 1/3
 
+print("%.5f" % x)
 
-directorio = os.getcwd()
-archivo = open(directorio + os.sep + "Leccion_1.py", "r")
+print("{:.5f}".format(x))
+print("{:10.5f}".format(x))
 
-for linea in archivo:
-    print(linea)
-
-archivo.close()
+tupla = (1, 2)
+print("{0} es mayor que {1}".format(*tupla))
