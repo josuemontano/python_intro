@@ -33,6 +33,8 @@ class Vector(object):
         self.x /= self.magnitud()
         self.y /= self.magnitud()
 
+    __repr__ = __str__
+
 if __name__ == '__main__':
     velocidad = Vector(14.2, 18)
     print(velocidad.magnitud())

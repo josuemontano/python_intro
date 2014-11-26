@@ -1,33 +1,16 @@
 # -*- coding: utf-8 -*-
 # Programación orientada a objetos
 # Lección 6
-# Módulo fractions
-
-from fractions import Fraction, gcd
+# Encapsulación
 
 
-a = Fraction(5, 4)
-b = Fraction(7, 16)
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
+class Vector(object):
 
-print(a.numerator)
-print(a.denominator)
+    def __init__(self, x, y):
+        super(Vector, self).__init__()
+        self.__x = x
+        self.__y = y
 
-print(float(a + b))
-print(gcd(10, 6))
-
-pi = Fraction('3.1415926535897932')
-print(pi.limit_denominator(50))
-
-# Otros constructores
-a = Fraction('7e-6')
-print(a)
-
-a = Fraction(10.5)
-print(a)
-
-a = Fraction('-9/2')
-print(a)
+if __name__ == '__main__':
+    velocidad = Vector(2, 0)
+    velocidad.__x
