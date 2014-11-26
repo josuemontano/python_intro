@@ -6,6 +6,7 @@
 x = 1/3
 
 print("%.5f" % x)
+print("%10.5f" % x)
 
 print("{:.5f}".format(x))
 print("{:10.5f}".format(x))
