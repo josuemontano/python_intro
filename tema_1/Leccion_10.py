@@ -6,18 +6,18 @@
 from math import *
 
 
-print(factorial(900))
+print(factorial(900))   # 900!
 
 x = pi
 y = e
 
-print(fabs(x))
-print(ceil(x))
-print(floor(x))
-print(trunc(x))
+print(fabs(x))          # |x|
+print(ceil(x))          # Función techo
+print(floor(x))         # Función piso
+print(trunc(x))         # Truncamiento a entero
 
-print(fmod(x, y))
-print(copysign(x, -1))
+print(fmod(x, y))       # Módulo de x / y (preferible para floats)
+print(copysign(x, -1))  # Float con la magnitud de x pero el signo de -1
 
-print(gamma(x))
-print(lgamma(x))
+print(gamma(x))         # Función gamma
+print(lgamma(x))        # Logaritmo natural del valor absoluto de gamma(x)

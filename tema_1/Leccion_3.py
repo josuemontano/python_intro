@@ -5,3 +5,7 @@
 
 pi = 3.14159265359
 print(pi)
+
+# Número identificador único
+print(id(pi))
+print(id(PI))
