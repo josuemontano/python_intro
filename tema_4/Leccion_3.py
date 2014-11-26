@@ -1,18 +1,15 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Programación funcional
 # Lección 3
-# NumPy: Atributos de array
+# Funciones lambda
 
-from numpy import array
+from math import cos, pi, tan
 
 
-a = array([[0, 1, 2, 3, 4],
-           [5, 6, 7, 8, 9],
-           [10, 11, 12, 13, 14]])
+suma_tres = lambda x, y, z: x + y + z
+print(suma_tres(1, 2, 3))
 
-print(a.ndim)
-print(a.shape)
-print(a.size)
-print(a.dtype)
-print(a.itemsize)
-print(a.data)
+
+coseno = lambda x: cos(x) if x > 0 else None
+tan_cos = lambda x: tan(coseno(x))
+print(tan_cos(pi))

@@ -1,24 +1,10 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Programación funcional
 # Lección 6
-# NumPy: Operaciones con matrices
+# filter
 
-import numpy
-from numpy import array
+pares = filter(lambda x: x if (x % 2) == 0 else None, range(10))
+print(list(pares))
 
-
-a = array([[1, 0, 1], [3, 0, 6]], float)
-b = array([[9, 4, 3], [5, 2, 8]], float)
-
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
-
-print(a ** b)
-print(numpy.sqrt(a))
-
-print(a > 4)
-
-print(10 * numpy.sin(a))
+menores_6 = filter(lambda x: x < 6, range(10))
+print(list(menores_6))

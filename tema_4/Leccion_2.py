@@ -1,24 +1,10 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Programación funcional
 # Lección 2
-# NumPy: Colecciones (arrays)
+# Funciones lambda
 
-import numpy
+doble = lambda x: x + 2
+print(type(doble))
 
-
-vector = numpy.array([3.1, 10, 8.94, 0.4, 2.4])
-print(vector, type(vector))
-
-print(len(vector))
-print(6 in vector)
-
-print(vector[0])
-print(vector[1:])
-print(vector[:2])
-print(vector[2:5])
-
-print(vector.min(), vector.argmin())
-print(vector.max(), vector.argmax())
-
-print(vector.copy())
-print(vector.tolist())
+print(doble(10))
+print(doble(0.5))

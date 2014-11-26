@@ -9,7 +9,5 @@ class Vector(object):
     pass
 
 if __name__ == '__main__':
-    velocidad = Vector()
-    type(velocidad)
-    
-    print(velocidad)
+    velocidad = Vector()    
+    print(velocidad, type(velocidad))

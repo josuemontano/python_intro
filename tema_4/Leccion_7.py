@@ -1,17 +1,11 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Programación funcional
 # Lección 7
-# NumPy: Álgebra lineal
+# reduce
 
-from numpy import array
-from numpy.linalg import *
+import functools
+import operator
 
 
-a = array([[5, 6, 2], [0, 4, 1], [3, 7, 1]])
-d = array([[3, 2, 6], [0, 0, 9], [8, 2, 2]])
-
-print(det(a))
-
-print(inv(a))
-print(solve(d, a))
-print(eigvals(d))
+ans = functools.reduce(operator.mul, [1, 2, 3])
+print(ans)

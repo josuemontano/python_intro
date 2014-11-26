@@ -14,5 +14,7 @@ fibonacci[3:6] = []
 print(fibonacci)
 
 copia = fibonacci[:]
+print(id(fibonacci), id(copia))
+
 copia.reverse()
 print(copia, fibonacci)

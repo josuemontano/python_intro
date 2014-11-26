@@ -9,7 +9,9 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 
 **Tema 3.** Programaci&oacute;n orientada a objetos. Fundamentos de la POO.
 
-**Tema 4.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. IPython y SciPy.
+**Tema 4.** Programaci&oacute;n funcional.
+
+**Tema 5.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. IPython y SciPy.
 
 ***
 

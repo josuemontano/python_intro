@@ -3,8 +3,7 @@
 # Lección 6
 # Módulo fractions
 
-from fractions import Fraction
-from fractions import gcd
+from fractions import Fraction, gcd
 
 
 a = Fraction(5, 4)
@@ -16,11 +15,12 @@ print(a / b)
 
 print(a.numerator)
 print(a.denominator)
-print(a.limit_denominator(50))
 
 print(float(a + b))
 print(gcd(10, 6))
 
+pi = Fraction('3.1415926535897932')
+print(pi.limit_denominator(50))
 
 # Otros constructores
 a = Fraction('7e-6')

@@ -13,7 +13,6 @@ class Vector(object):
         self.x = x
         self.y = y
 
-
 if __name__ == '__main__':
     velocidad = Vector()
     print(velocidad.x, velocidad.y)

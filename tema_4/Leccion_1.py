@@ -1,20 +1,15 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Programación funcional
 # Lección 1
-# NumPy: Introducción
-
-import numpy
+# Funciones de orden superior
 
 
-x = 0
-print(numpy.sin(x))
-print(numpy.cos(x))
-print(numpy.tan(x))
+def f(x):
+   return x ** 2
 
-print(numpy.exp(x))
-print(numpy.log(x))
 
-print(type(numpy.inf))
+def g(fu, x):
+   return fu(x) * fu(x)
 
-print(numpy.pi)
-print(numpy.e)
+numero = 10
+print(g(f, x))

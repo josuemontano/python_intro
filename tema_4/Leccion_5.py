@@ -1,46 +1,26 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Programación funcional
 # Lección 5
-# NumPy: Matrices
+# map
 
-import numpy
-
-
-matriz = numpy.array([[1, 0, 0],
-                      [0, 1, 0],
-                      [0, 0, 1]])
-
-print(matriz, type(matriz))
-
-print(matriz.sum())
-print(matriz.prod())
-
-print(matriz.diagonal())
-print(matriz.transpose())
-print(matriz.conj())
-
-print(matriz.mean())
-print(matriz.var())
-print(matriz.std())
+import math
+import operator
 
 
-x = numpy.zeros((3, 2))
-print(x, type(x))
+cuadrados = map(lambda x: x ** 2, [1, 2, 3, 4, 5])
+print(list(cuadrados))
 
-x = numpy.zeros_like(matriz)
-print(x, type(x))
+absolutos = map(operator.abs, [-1, 2, -3, 4, -5])
+print(list(absolutos))
 
+suma = map(operator.add, [1, 2, 3], [4, 5, 6])
+print(list(suma))
 
-x = numpy.ones((4, 3), dtype=int)
-print(x, type(x))
+senos = map(math.sin, [1, 2, 3, 4, 5])
+print(list(senos))
 
-x = numpy.ones_like(matriz)
-print(x, type(x))
+cadenas = map(str, range(1, 11))
+print(list(cadenas))
 
-
-x = numpy.identity(10)
-print(x, type(x))
-
-
-matriz.fill(0)
-print(matriz)
+contador = map([1, 2, 3, 4].count, [1, 2, 3, 4, 1, 1, 2])
+print(list(contador))

@@ -3,8 +3,7 @@
 # Lección 5
 # Módulo decimal
 
-from decimal import Decimal
-from decimal import localcontext
+from decimal import Decimal, localcontext
 
 
 a = Decimal(0.1)

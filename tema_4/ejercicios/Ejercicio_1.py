@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
-# Matplotlib
+# Programación funcional
 # Ejercicio 1
-# Gráfica de la función seno
-
-from numpy import linspace, pi, sin
-from matplotlib import pyplot
+# Funciones lambda
 
 
-x = linspace(-pi, pi, 201)
+def suma_cuadrados(a, b):
+    return sum(map(lambda x: x ** 2, range(a, b + 1)))
 
-pyplot.plot(x, sin(x))
-pyplot.xlabel("ángulo [rad]")
-pyplot.ylabel("sin(x)")
-pyplot.show()
+a = 0
+b = 5
+print(suma_cuadrados(a, b))
