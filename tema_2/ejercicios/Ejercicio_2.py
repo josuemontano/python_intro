@@ -3,6 +3,7 @@
 # Ejercicio 2
 # Números primos
 
+
 def es_numero_primo(n):
     """ Verifica si el número n dado es primo """
     if n > 1:
