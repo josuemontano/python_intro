@@ -18,10 +18,12 @@ class Vector(object):
 
     @x.setter
     def x(self, x):
+        if not isinstance(x, int):
+            raise Exception("No es un dato valido")
         self.__x = x
 
 if __name__ == '__main__':
     velocidad = Vector(2, 0)
-    velocidad.x = 9
+    velocidad.x = 2
 
     print(velocidad.x)
