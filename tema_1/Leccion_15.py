@@ -12,11 +12,11 @@ print(x)
 print(x.real)
 print(x.imag)
 
-print(phase(x))   # Fase o argumento de x, rango de resultado es [-π, π]
-print(polar(x))   # x en coordenadas polares
-print(rect(e, 0)) # Numero complejo cuyas coordenadas polares son e y 0
+print(phase(x))    # Fase o argumento de x, rango de resultado es [-π, π]
+print(polar(x))    # x en coordenadas polares
+print(rect(e, 0))  # Numero complejo cuyas coordenadas polares son e y 0
 
 print(exp(x))
 print(sqrt(x))
 
-print(abs(x))     # |x|
+print(abs(x))      # |x|

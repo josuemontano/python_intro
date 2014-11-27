@@ -3,8 +3,6 @@
 # Lección 2
 # Constructor
 
-import math
-
 
 class Vector(object):
     """ Vector de 2D """

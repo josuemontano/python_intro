@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 3
-# Imprimiendo la variable en pantalla
+# Imprimiendo la variable en pantalla, IDs
 
 pi = 3.14159265359
 print(pi)
 
-# Número identificador único
-print(id(pi))
-print(id(PI))
+print(id(pi), id(pi * 1))
