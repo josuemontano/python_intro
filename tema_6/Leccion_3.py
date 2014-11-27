@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Herramientas para computación científica
+# Útiles
 # Lección 3
 # Archivos: lectura
 
