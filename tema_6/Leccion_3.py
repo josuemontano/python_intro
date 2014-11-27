@@ -10,6 +10,6 @@ directorio = os.getcwd()
 archivo = open(directorio + os.sep + "Leccion_1.py", "r")
 
 for linea in archivo:
-    print(linea)
+    print(linea, end="")
 
 archivo.close()
