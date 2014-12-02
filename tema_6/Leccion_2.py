@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
-# Útiles
+# Conexión a bases de datos
 # Lección 2
-# Formato de cadenas
+# SQLAlchemy: Conexión y sesión
 
-x = 1/3
+from sqlalchemy.engine import create_engine
+from sqlalchemy.orm.scoping import scoped_session
+from sqlalchemy.orm.session import sessionmaker
 
-print("%.5f" % x)
-print("%10.5f" % x)
+from tema_6.Leccion_1 import Base
 
-print("{:.5f}".format(x))
-print("{:10.5f}".format(x))
-
-tupla = (1, 2)
-print("{0} es mayor que {1}".format(*tupla))
+engine = create_engine('postgresql+pscopg2://josuemontano:@127.0.0.1:5432/')
+session = scoped_session(sessionmaker(bind=engine))
+Base.metadata.bind = engine

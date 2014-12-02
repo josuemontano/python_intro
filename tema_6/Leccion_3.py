@@ -1,15 +1,33 @@
 # -*- coding: utf-8 -*-
-# Útiles
+# Conexión a bases de datos
 # Lección 3
-# Archivos: lectura
+# SQLAlchemy: Queries
 
-import os
+from tema_6.Leccion_1 import Libro
+from tema_6.Leccion_2 import session
 
 
-directorio = os.getcwd()
-archivo = open(directorio + os.sep + "Leccion_1.py", "r")
+def todos_libros():
+    return session.query(Libro).all()
 
-for linea in archivo:
-    print(linea, end="")
 
-archivo.close()
+def libros_recientes():
+    return session.query(Libro).filter(Libro.anio_publicacion >= 2010).all()
+
+
+def libros_por_titulo(titulo):
+    return session.query(Libro).filter(Libro.titulo.startswith(titulo)).all()
+
+
+def main():
+    for libro in todos_libros():
+        print(libro.titulo)
+
+    for libro in libros_recientes():
+        print(libro.fecha_publicacion, libro.titulo)
+
+    for libro in libros_por_titulo('Math'):
+        print(libro.fecha_publicacion, libro.titulo)
+
+if __name__ == '__main__':
+    main()
