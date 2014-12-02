@@ -1,38 +1,22 @@
 # -*- coding: utf-8 -*-
 # Conexión a bases de datos
 # Lección 5
-# SQLAlchemy: Mapeo de relaciones
+# SQLAlchemy: Actualización y eliminación de registros
 
-from sqlalchemy import create_engine, Integer, Column, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
-from sqlalchemy.sql.schema import ForeignKey
-
-Base = declarative_base()
-
-
-class Autor(Base):
-    __tablename__ = 'bxauthors'
-
-    id     = Column(Integer, primary_key=True, autoincrement=True)
-    nombre = Column('name', String(100), nullable=False)
-
-
-class Libro(Base):
-    __tablename__ = 'bxbooks'
-
-    isbn             = Column(Integer, primary_key=True)
-    titulo           = Column('book_title', String(200), nullable=False)
-    anio_publicacion = Column('year_published', Integer, default=2014)
-    editorial        = Column('publisher', String(100))
-    author_id        = Column(Integer, ForeignKey('bxauthors.id'), nullable=False)
-
-    autor = relationship(Autor)
+from Leccion_1 import Libro
+from Leccion_2 import session
 
 
 def main():
-    engine = create_engine('sqlite:///books_authors.sqlite')
-    Base.metadata.create_all(engine)
+    libro_a = session.query(Libro).filter(Libro.isbn == 1584884304).one()
+    libro_a.titulo += ' and Engineers'
+    session.commit()
+    print("El libro {} ha sido actualizado".format(libro_a.isbn))
+
+    libro_b = session.query(Libro).filter(Libro.isbn == 1584884304).one()
+    session.delete(libro_b)
+    session.commit()
+    print("El libro {} ha sido eliminado".format(libro_b.titulo))
 
 if __name__ == '__main__':
     main()

@@ -11,10 +11,10 @@ from sqlalchemy.exc import IntegrityError
 
 def main():
     editorial = 'Wiley'
-    logica = Libro(isbn='0486425337', titulo='Mathematical Logic', anio_publicacion=2014, editorial=editorial)
+    logica = Libro(isbn=486425337, titulo='Mathematical Logic', anio_publicacion=2014, editorial=editorial)
     session.add(logica)
 
-    libreria = Libro(isbn='1584884304', titulo='A Numerical Library in Java for Scientists and Engineers', anio_publicacion=2003, editorial=editorial)
+    libreria = Libro(isbn=1584884304, titulo='A Numerical Library in Java for Scientists', anio_publicacion=2003, editorial=editorial)
     session.add(libreria)
 
     session.commit()

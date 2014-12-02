@@ -36,7 +36,7 @@ def main():
     for libro in libros_recientes():
         print(libro.anio_publicacion, libro.titulo)
 
-    print("\nLibros cuyo titul empieza con 'Math':")
+    print("\nLibros cuyo titulo empieza con 'Math':")
     for libro in libros_por_titulo('Math'):
         print(libro.anio_publicacion, libro.titulo)
 
