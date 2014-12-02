@@ -7,8 +7,8 @@ from sqlalchemy.engine import create_engine
 from sqlalchemy.orm.scoping import scoped_session
 from sqlalchemy.orm.session import sessionmaker
 
-from tema_6.Leccion_1 import Base
+from Leccion_1 import Base
 
-engine = create_engine('postgresql+pscopg2://josuemontano:@127.0.0.1:5432/')
+engine = create_engine('sqlite:///books.sqlite')
 session = scoped_session(sessionmaker(bind=engine))
 Base.metadata.bind = engine

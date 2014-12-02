@@ -1,30 +1,27 @@
 # -*- coding: utf-8 -*-
 # Conexión a bases de datos
-# Lección 3
-# SQLAlchemy: Mapeo de relaciones
+# Lección 5
+# SQLAlchemy: Creación de registros
 
-from sqlalchemy import Integer, Column, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
-from sqlalchemy.sql.schema import ForeignKey
-
-Base = declarative_base()
+from Leccion_1 import Libro
+from Leccion_2 import session
+from Leccion_3 import libros_recientes_por_titulo, cantidad_libros_editorial
+from sqlalchemy.exc import IntegrityError
 
 
-class Autor(Base):
-    __tablename__ = 'bxauthors'
+def main():
+    editorial = 'Wiley'
+    logica = Libro(isbn='0486425337', titulo='Mathematical Logic', anio_publicacion=2014, editorial=editorial)
+    session.add(logica)
 
-    id     = Column(Integer, primary_key=True, autoincrement=True)
-    nombre = Column('name', String(100), nullable=False)
+    libreria = Libro(isbn='1584884304', titulo='A Numerical Library in Java for Scientists and Engineers', anio_publicacion=2003, editorial=editorial)
+    session.add(libreria)
 
+    session.commit()
 
-class Libro(Base):
-    __tablename__ = 'bxbooks'
+    for libro in libros_recientes_por_titulo('Ma'):
+        print(libro.titulo)
+    print("Existen {} libros de la editorial {}".format(cantidad_libros_editorial(editorial), editorial))
 
-    isbn             = Column(Integer, primary_key=True)
-    titulo           = Column('book_title', String(200), nullable=False)
-    anio_publicacion = Column('year_published', Integer, default=2014)
-    editorial        = Column('publisher', String(100))
-    author_id        = Column(Integer, ForeignKey('bxauthors.id'), nullable=False)
-
-    autor = relationship(Autor)
+if __name__ == '__main__':
+    main()
