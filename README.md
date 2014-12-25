@@ -13,7 +13,9 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 
 **Tema 5.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. IPython y SciPy.
 
-**Tema 6.** &Uacute;tiles.
+**Tema 6.** Conexi&oacute;n a bases de datos. SQLAlchemy.
+
+**Tema 7.** Archivos.
 
 ***
 
