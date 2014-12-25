@@ -6,7 +6,7 @@
 from numpy import arange, linspace
 
 
-x = arange(5, 50, 3)
+x = arange(5, 50 + 1, 3)
 print(type(x))
 print(x)
 

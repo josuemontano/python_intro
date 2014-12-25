@@ -13,7 +13,7 @@ matriz = numpy.array([[1, 0, 0],
 print(matriz, type(matriz))
 
 print(matriz.sum())
-print(matriz.prod())
+print(matriz.prod(axis=1))
 
 print(matriz.diagonal())
 print(matriz.transpose())
@@ -31,7 +31,7 @@ x = numpy.zeros_like(matriz)
 print(x, type(x))
 
 
-x = numpy.ones((4, 3), dtype=int)
+x = numpy.ones((4, 3), dtype=float)
 print(x, type(x))
 
 x = numpy.ones_like(matriz)
@@ -42,5 +42,5 @@ x = numpy.identity(10)
 print(x, type(x))
 
 
-matriz.fill(0)
+matriz.fill(5)
 print(matriz)

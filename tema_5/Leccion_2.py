@@ -11,6 +11,7 @@ print(vector, type(vector))
 
 print(len(vector))
 print(6 in vector)
+print(list(map(lambda x: True if x in [1, 2, 10] else False, vector)))
 
 print(vector[0])
 print(vector[1:])

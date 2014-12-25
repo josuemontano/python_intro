@@ -13,5 +13,10 @@ d = array([[3, 2, 6], [0, 0, 9], [8, 2, 2]])
 print(det(a))
 
 print(inv(a))
+print(a.dot(inv(a)))
 print(solve(d, a))
 print(eigvals(d))
+print(svd(d))
+
+print(a.trace(offset=1))
+print(a.diagonal())
