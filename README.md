@@ -15,7 +15,7 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 
 **Tema 6.** Conexi&oacute;n a bases de datos. SQLAlchemy.
 
-**Tema 7.** &Uacute;tiles y archivos.
+**Tema 7.** &Uacute;tiles. Archivos y otros.
 
 ***
 
