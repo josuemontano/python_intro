@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# Útiles
-# Lección 3
+# Útiles y archivos
+# Lección 4
 # Archivos: escritura
 
 import os
