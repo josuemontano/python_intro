@@ -1,7 +1,7 @@
-Matem&aacute;tica computacional con Python
+Computaci&oacute;n cient&iacute;fica con Python
 ============
 
-Este curso persigue presentar una introducci&oacute;n agradable a la programaci&oacute;n en Python. Nos centraremos en su aplicaci&oacute;n a las matem&aacute;ticas.
+Este curso persigue presentar una introducci&oacute;n agradable a la programaci&oacute;n en Python. Nos centraremos en su aplicaci&oacute;n en la f&iacute;sica y las matem&aacute;ticas.
 
 **Tema 1.** Programaci&oacute;n interactiva en Python. Introduce los tipos num&eacute;ricos as&iacute; como los m&oacute;dulos math y cmath.
 
