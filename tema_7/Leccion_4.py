@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Útiles y archivos
+# Útiles
 # Lección 4
 # Archivos: escritura
 
