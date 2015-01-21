@@ -1,4 +1,4 @@
-&Uacute;tiles y archivos
+&Uacute;tiles
 ===
 
 **Lecci&oacute;n 1.** M&oacute;dulo `os`
