@@ -1,0 +1,34 @@
+from math import cos, sin
+from math import pi
+
+size(500, 250)
+background(0)
+
+
+def calcular_posicion(y0, v, t):
+    x = v[0] * t
+    y = y0 + v[1] * t + 0.5 * 9.81 * t ** 2
+    return x, y
+
+
+def setup(anim):
+    v0 = 50
+    angulo = -25
+    theta = angulo * pi / 180.0
+    
+    anim.y0 = HEIGHT / 2
+    anim.v = [v0 * cos(theta), v0 * sin(theta)]
+    anim.t = 0
+
+
+def draw(anim):
+    anim.t += 0.075
+    x, y = calcular_posicion(anim.y0, anim.v, anim.t)
+    arc(x, y, 5, fill='orange')
+    
+    if y > HEIGHT:
+        halt()
+
+
+def stop(anim):
+    print(anim.t, "[sec]")
