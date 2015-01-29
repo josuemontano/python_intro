@@ -19,4 +19,6 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 
 ***
 
+La carpeta `plotdevice` contiene algunas simulaciones sencillas para [PlotDevice](http://plotdevice.io) (&uacute;nicamente Mac OS X 10.9 o superior).
+
 La carpeta `themes` contiene algunas preferencias para [PyCharm](https://www.jetbrains.com/pycharm) y [SublimeText 3](http://www.sublimetext.com/3) listas para importar.

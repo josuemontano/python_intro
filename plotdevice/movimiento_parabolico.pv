@@ -22,12 +22,13 @@ def setup(anim):
 
 
 def draw(anim):
-    anim.t += 0.075
     x, y = calcular_posicion(anim.y0, anim.v, anim.t)
     arc(x, y, 5, fill='orange')
     
-    if y > HEIGHT:
+    if y >= HEIGHT:
         halt()
+
+    anim.t += 0.075
 
 
 def stop(anim):

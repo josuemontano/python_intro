@@ -1,25 +1,25 @@
 size(250, 700)
 background(1)
-speed(60)
 
 
-def caida_libre(y_0, t, v_0=0):
-    return y_0 + v_0 * t + 0.5 * 9.81 * t ** 2
+def caida_libre(y0, t, v0=0):
+    return y0 + v0 * t + 0.5 * 9.81 * t ** 2
 
 
 def setup(anim):
     anim.t = 0
-    anim.y = 0
-    anim.y_i = 0
+    anim.y0 = 0
 
 
 def draw(anim):
-    anim.y = caida_libre(anim.y_i, anim.t)
-    anim.t += 0.05
-    arc(WIDTH/2, anim.y, 10, fill='orange')
-
-    if anim.y > 685:
+    y = caida_libre(anim.y0, anim.t)
+    arc(WIDTH/2, y, 10, fill='orange')
+    
+    if y >= HEIGHT:
         halt()
 
+    anim.t += 0.05
+
+
 def stop(anim):
-    print("Tiempo de caida: " + str(anim.t) + "[s]")
+    print(anim.t, "[s]")
