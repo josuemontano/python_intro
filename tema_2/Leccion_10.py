@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Lección 10
-# Tuplas
+# Tuplas - Parte 1
 
 import math
 

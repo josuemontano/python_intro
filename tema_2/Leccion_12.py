@@ -1,20 +1,19 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
-# Lección 12
-# Exepciones
+# Lección 11
+# Recursividad
 
 
-def convertir_a_Farenheit(temperatura_Celcius=0):
-    """ Devuelve la temperatura dada en escala Farenheit """
-    return 9 / 5 * temperatura_Celcius + 32
+def fibonacci(n):
+    """ Devuelve el n-ésimo número de la secuencia de Fibonacci """
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 
 def main():
-    try:
-        numero = int(input("Introduzca un numero: "))
-    except ValueError:
-        print("El valor que introdujo no es un numero")
-    else:
-        print(convertir_a_Farenheit(numero))
+    print(fibonacci(10))
+    print(fibonacci(30))
 
 main()

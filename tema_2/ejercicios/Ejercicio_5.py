@@ -1,29 +1,22 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Ejercicio 5
-# Números de Armstrong
+# Aproximación de log(1 + x)
 
 
-def es_numero_armstrong(n):
-    """ Verifica si el número n dado es un número de Armstrong """
+def log_1px(x, n=15):
+    """ Aproximación de la función log(1+x) por expansión de Taylor """
     suma = 0
-    temp = n
-    while temp > 0:
-        digito = temp % 10
-        suma += digito ** 3
-        temp //= 10
-    return sum == n
+    k = 1
+    while k <= n:
+        suma = suma + ((-1) ** k * x ** k) / k
+        k = k + 1
+
+    return suma
 
 
 def main():
-    try:
-        numero = int(input("Introduzca un número: "))
-    except ValueError:
-        print("El valor que introdujo no es un número")
-    else:
-        if es_numero_armstrong(numero):
-            print("En número", numero, "es un número de Armstrong")
-        else:
-            print("En número", numero, "no es un número de Armstrong")
+    print(log_1px(0.1))
+    print(log_1px(0.1, 100))
 
 main()

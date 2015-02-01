@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Lección 11
-# Recursividad
+# Tuplas - Parte 2
 
 
-def fibonacci(n):
-    """ Devuelve el n-ésimo número de la secuencia de Fibonacci """
-    if n == 1 or n == 2:
-        return 1
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+def coordenadas_rectangulares(r, theta):
+    x = r * cos(theta)
+    y = r * sin(theta)
+    return (x, y)
+
+
+def escalar_por_vector(escalar, vector):
+    x = escalar * vector[0]
+    y = escalar * vector[1]
+    return (x, y)
 
 
 def main():
-    print(fibonacci(10))
-    print(fibonacci(30))
+    vector = (4, 10)
+    print(escalar_por_vector(2, vector))
+    print(escalar_por_vector(0, vector))
 
 main()
