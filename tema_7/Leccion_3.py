@@ -6,7 +6,6 @@
 import os
 
 
-directorio = os.getcwd()
-with open(directorio + os.sep + "Leccion_1.py") as archivo:
+with open(os.getcwd() + os.sep + "README.md") as archivo:
     for linea in archivo:
         print(linea, end="")
