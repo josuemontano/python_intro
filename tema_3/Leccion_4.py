@@ -4,7 +4,7 @@
 # Herencia
 
 import random
-from tema_3.Leccion_3 import Vector
+from Leccion_3 import Vector
 
 
 class VectorRandomico(Vector):
@@ -14,7 +14,8 @@ class VectorRandomico(Vector):
         self.x = float(random.randrange(rango_x[0], rango_x[1]))
         self.y = float(random.randrange(rango_y[0], rango_y[1]))
 
-if __name__ == '__main__':
+
+def main():
     velocidad = VectorRandomico((0, 100), (0, 100))
     print(velocidad.magnitud())
 
@@ -22,3 +23,6 @@ if __name__ == '__main__':
     velocidad.multiplicar(2.1)
     velocidad.normalizar()
     print(velocidad)
+
+if __name__ == '__main__':
+    main()

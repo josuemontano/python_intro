@@ -11,10 +11,14 @@ class Vector(object):
         self.x = x
         self.y = y
 
-if __name__ == '__main__':
+
+def main():
     velocidad = Vector()
     print(velocidad.x, velocidad.y)
 
     aceleracion = Vector(2, 0.4)
     aceleracion.x = 1.4
     print(aceleracion.x, aceleracion.y)
+
+if __name__ == '__main__':
+    main()

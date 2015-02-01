@@ -35,7 +35,8 @@ class Vector(object):
 
     __repr__ = __str__
 
-if __name__ == '__main__':
+
+def main():
     velocidad = Vector(14.2, 18)
     print(velocidad.magnitud())
 
@@ -43,3 +44,6 @@ if __name__ == '__main__':
     velocidad.multiplicar(2.1)
     velocidad.normalizar()
     print(velocidad)
+
+if __name__ == '__main__':
+    main()

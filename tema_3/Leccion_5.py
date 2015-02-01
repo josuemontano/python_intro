@@ -40,10 +40,14 @@ class Fraccion(object):
 
     __repr__ = __str__
 
-if __name__ == '__main__':
+
+def main():
     fraccion_1 = Fraccion(1, 2)
     fraccion_2 = Fraccion(5, 3)
 
     print(fraccion_1 + fraccion_1)
     print(fraccion_1 * fraccion_2)
     print(fraccion_1 == fraccion_1)
+
+if __name__ == '__main__':
+    main()

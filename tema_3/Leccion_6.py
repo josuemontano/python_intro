@@ -22,8 +22,12 @@ class Vector(object):
             raise Exception("No es un dato valido")
         self.__x = x
 
-if __name__ == '__main__':
+
+def main():
     velocidad = Vector(2, 0)
     velocidad.x = 2
 
     print(velocidad.x)
+
+if __name__ == '__main__':
+    main()

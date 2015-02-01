@@ -7,5 +7,9 @@
 def suma_cuadrados(a, b):
     return sum(map(lambda x: x ** 2, range(a, b + 1)))
 
-if __name__ == '__main__':
+
+def main():
     print(suma_cuadrados(11, 16))
+
+if __name__ == '__main__':
+    main()

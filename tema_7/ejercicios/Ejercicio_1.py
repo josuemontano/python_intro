@@ -17,6 +17,10 @@ def parsear_archivo(archivo_path):
             coordenadas.append(linea.split())
     return coordenadas
 
-if __name__ == '__main__':
+
+def main():
     coordenadas = parsear_archivo(os.getcwd() + os.sep + "coordenadas.txt")
     print("El archivo contiene", len(coordenadas), "coordenadas")
+
+if __name__ == '__main__':
+    main()
