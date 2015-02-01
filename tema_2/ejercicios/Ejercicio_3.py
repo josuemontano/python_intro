@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Ejercicio 3
-# Expansión de Taylor para la función seno
-
-from math import factorial
+# Números primos
 
 
-def seno_taylor(x, n=10):
-    """ Aproximación de la función seno por expansión de Taylor """
-    ans = 0
-    for i in range(1, n):
-        _2nm1 = (2 * i - 1)
-        ans += pow(-1, i - 1) * pow(x, _2nm1) / factorial(_2nm1)
-    return ans
+def es_numero_primo(n):
+    """ Verifica si el número n dado es primo """
+    if n > 1:
+        for i in range(2, n):
+            if (n % i) == 0:
+                return False
+        return True
+    else:
+        return False
 
-print(seno_taylor(0.5))
-print(seno_taylor(-0.01, 6))
+print(es_numero_primo(401))
