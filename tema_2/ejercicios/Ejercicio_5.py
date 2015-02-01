@@ -5,7 +5,7 @@
 
 
 def es_numero_armstrong(n):
-    """ Verifica si el número n dado es un número de Armstrong"""
+    """ Verifica si el número n dado es un número de Armstrong """
     suma = 0
     temp = n
     while temp > 0:

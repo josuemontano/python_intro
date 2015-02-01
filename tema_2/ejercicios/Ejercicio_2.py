@@ -5,8 +5,7 @@
 
 
 def pi_wallis(n):
-    """ Producto de Wallis para π
-    """
+    """ Producto de Wallis para π """
     producto = 1
     k = 1
     while k <= n:

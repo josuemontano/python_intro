@@ -9,11 +9,18 @@ import operator
 import sys
 
 
-if __name__ == '__main__':
-    files = os.listdir(sys.argv[1])
-    files = filter(lambda x: x.endswith(".py"), files)
-    if len(list(files)) > 0:
-        tamano = functools.reduce(operator.add, map(os.path.getsize, files))
-        print(tamano)
+def obtener_tamano_directorio(directorio=None):
+    archivos = os.listdir(directorio)
+    lista = list(filter(lambda x: x.endswith(".py"), archivos))
+    if len(lista) > 0:
+        return functools.reduce(operator.add, map(os.path.getsize, lista))
     else:
-        print(0)
+        return 0
+
+if __name__ == '__main__':    
+    if len(sys.argv) > 1:
+        tamano = obtener_tamano_directorio(sys.argv[1])
+    else:
+        tamano = obtener_tamano_directorio()
+
+    print("La carpeta contiene", tamano, "B")
