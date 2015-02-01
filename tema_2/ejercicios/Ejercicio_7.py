@@ -1,35 +1,28 @@
 # -*- coding: utf-8 -*-
 # Introducción al lenguaje de programacion Python
 # Ejercicio 7
-# Suma de matrices
+# Movimiento parabólico
+
+from math import cos, sin, pi
 
 
-def suma_matricial(A, B):
-    """ Función que, dadas las matrices A y B, devuelve la matriz A + B """
-    if verificar_matrices_para_suma(A, B):
-        # Construimos una matriz de la misma que la matriz B
-        ans = [[0 for i in range(len(B[0]))] for j in range(len(B))]
-        for i in range(len(A)):
-            for j in range(len(A[0])):
-                ans[i][j] = A[i][j] + B[i][j]
-        return ans
-    else:
-        return None
-
-
-def verificar_matrices_para_suma(A, B):
-    """ Verifica si las matrices dadas pueden ser sumadas """
-    return (len(A) == len(B)) and (len(A[0]) == len(B[0]))
-
-matriz_A = [[1, 1],
-            [5, 6],
-            [3, 2]]
-matriz_B = [[2, 9],
-            [7, 7],
-            [0, 0]]
+def movimiento_parabolico(y0=0, V0=0, angulo=0):
+    t = 0
+    x = 0
+    y = y0
+    theta = angulo * pi / 180
+    tabla = []
+    while y >= 0:
+        tabla.append([x, y])
+        x = V0 * cos(theta) * t
+        y = y0 + V0 * sin(theta) * t - 0.5 * 9.81 * t ** 2
+        t = t + 0.05
+    
+    return tabla
 
 
 def main():
-    print(suma_matricial(matriz_A, matriz_B))
+    tabla = movimiento_parabolico(y0=2, V0=10, angulo=30)
+    print(tabla)
 
 main()
