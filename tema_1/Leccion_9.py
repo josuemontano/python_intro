@@ -13,4 +13,8 @@ def calcular_volumen_esfera(radio):
     """
     return 4 / 3 * pi * radio ** 3
 
-print(calcular_volumen_esfera(7))
+
+def main():
+    print(calcular_volumen_esfera(7))
+
+main()

@@ -12,8 +12,11 @@ def es_par(n):
         return False
 
 
-numero = int(input("Introduzca un numero: "))
-if not es_par(numero):
-    print(numero, "es impar")
-else:
-    print(numero, "es par")
+def main():
+    numero = int(input("Introduzca un numero: "))
+    if not es_par(numero):
+        print(numero, "es impar")
+    else:
+        print(numero, "es par")
+
+main()

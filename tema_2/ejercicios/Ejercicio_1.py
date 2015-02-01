@@ -15,4 +15,8 @@ def obtener_sucesion_fibonacci(n):
         a, x = x, a + x
     return sucesion
 
-print(obtener_sucesion_fibonacci(180))
+
+def main():
+    print(obtener_sucesion_fibonacci(180))
+
+main()

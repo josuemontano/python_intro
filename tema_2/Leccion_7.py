@@ -11,4 +11,8 @@ def cuadrados():
     for x in [1, 2, 3, 4, 5, 6]:
         print(x ** 2)
 
-cuadrados()
+
+def main():
+    cuadrados()
+
+main()

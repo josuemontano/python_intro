@@ -28,4 +28,8 @@ matriz_B = [[2, 9],
             [7, 7],
             [0, 0]]
 
-print(suma_matricial(matriz_A, matriz_B))
+
+def main():
+    print(suma_matricial(matriz_A, matriz_B))
+
+main()

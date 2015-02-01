@@ -16,4 +16,8 @@ def obtener_sucesion_fibonacci(n):
         x = x + a
         a = tmp
 
-obtener_sucesion_fibonacci(50)
+
+def main():
+    obtener_sucesion_fibonacci(50)
+
+main()

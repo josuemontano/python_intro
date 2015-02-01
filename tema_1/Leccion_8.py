@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Lección 8
-# Importación de módulos
+# Importación de módulos, función principal (main)
 
 from math import pi
 
@@ -14,4 +14,8 @@ def calcular_volumen_esfera():
     radio = 7
     return 4 / 3 * pi * radio ** 3
 
-print(calcular_volumen_esfera())
+
+def main():
+    print(calcular_volumen_esfera())
+
+main()

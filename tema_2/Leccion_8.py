@@ -11,4 +11,8 @@ def cuadrados(n):
     for x in range(n):
         print(x ** 2)
 
-cuadrados(30)
+
+def main():
+    cuadrados(30)
+
+main()

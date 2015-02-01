@@ -14,12 +14,16 @@ def es_numero_armstrong(n):
         temp //= 10
     return sum == n
 
-try:
-    numero = int(input("Introduzca un número: "))
-except ValueError:
-    print("El valor que introdujo no es un número")
-else:
-    if es_numero_armstrong(numero):
-        print("En número", numero, "es un número de Armstrong")
+
+def main():
+    try:
+        numero = int(input("Introduzca un número: "))
+    except ValueError:
+        print("El valor que introdujo no es un número")
     else:
-        print("En número", numero, "no es un número de Armstrong")
+        if es_numero_armstrong(numero):
+            print("En número", numero, "es un número de Armstrong")
+        else:
+            print("En número", numero, "no es un número de Armstrong")
+
+main()

@@ -14,4 +14,8 @@ def es_numero_primo(n):
     else:
         return False
 
-print(es_numero_primo(401))
+
+def main():
+    print(es_numero_primo(401))
+
+main()
