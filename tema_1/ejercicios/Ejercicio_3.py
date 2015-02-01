@@ -1,18 +1,22 @@
 # -*- coding: utf-8 -*-
 # Programación interactiva en Python
 # Ejercicio 3
-# Área de un triángulo
+# Coordenadas polares a rectangulares
 
+from math import cos
 from math import sin
-from math import radians
+from math import pi
 
 
-def area_triangulo(a, b, gamma):
-    """ Devuelve el area de un triángulo
-        A = a * b * sin(gamma)/2
-    """
-    gamma = radians(gamma)
-    return a * b * sin(gamma) / 2
+def coordenada_x(r, theta):
+    """ Dados (r, theta) coordenadas polares, devuelve r*cos(theta) """
+    return r * cos(theta)
 
-print(area_triangulo(4, 3, 90))
-print(area_triangulo(7.1, 8, 31))
+
+def coordenada_y(r, theta):
+    """ Dados (r, theta) coordenadas polares, devuelve r*sin(theta) """
+    return r * sin(theta)
+
+r = 10.0
+theta = pi / 3
+print(coordenada_x(r, theta), coordenada_y(r, theta))

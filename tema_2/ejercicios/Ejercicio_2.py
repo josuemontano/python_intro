@@ -14,6 +14,5 @@ def pi_wallis(n):
 
     return producto * 2
 
-
 print(pi_wallis(500))
 print(pi_wallis(500000))
