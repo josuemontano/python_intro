@@ -17,4 +17,5 @@ def main():
 
     print(quad(f, 0, float('inf')))
 
-main()
+if __name__ == '__main__':
+    main()

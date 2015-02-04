@@ -15,4 +15,5 @@ def main():
     print("f'(0) =", derivative(f, 0))
     print("f''(0) =", derivative(f, 0, n=2))
 
-main()
+if __name__ == '__main__':
+    main()

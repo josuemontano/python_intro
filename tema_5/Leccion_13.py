@@ -3,13 +3,16 @@
 # Lección 13
 # Matplotlib: Gráfica simple
 
-import numpy
-from matplotlib import pyplot
+from numpy import exp, linspace, pi, sin
+from matplotlib.pyplot import plot, show
 
 
-x = numpy.linspace(0, 1, 200)
-y = numpy.sin(4 * numpy.pi * x) * numpy.exp(-5 * x)
+def main():
+    x = linspace(0, 1, 200)
+    y = sin(4 * pi * x) * exp(-5 * x)
+    
+    plot(x, y)
+    show()
 
-pyplot.plot(x, y)
-
-pyplot.show()
+if __name__ == '__main__':
+    main()

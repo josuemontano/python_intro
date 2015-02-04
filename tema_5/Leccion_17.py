@@ -10,8 +10,6 @@ x = symbols("x")
 
 fx = sin(x) * exp(x)
 print(limit(fx, x, 0))
-
-fx = sin(x) * exp(x)
 print(diff(fx, x))
 
 fx = sin(x ** 2)
