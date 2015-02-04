@@ -3,7 +3,7 @@
 # Lección 10
 # SciPy: Integración numérica
 
-from scipy.integrate import quad
+from scipy.integrate import quad, romberg
 from scipy import sin, exp, pi
 
 
@@ -13,6 +13,8 @@ def f(t):
 
 def main():
     print(quad(f, 0, pi))
+    print(romberg(f, 0, pi))
+
     print(quad(f, 0, float('inf')))
 
 main()
