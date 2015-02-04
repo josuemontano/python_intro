@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-# NumPy
+# Herramientas para computación científica
 # Lección 8
-# NumPy: Estadística
+# SciPy: Estadística
 
-from numpy import median, corrcoef, cov
+from scipy import median, corrcoef, cov
 
 
 a = [[1, 2, 3], [4, 5, 6]]

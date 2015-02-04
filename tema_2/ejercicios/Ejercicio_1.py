@@ -18,5 +18,6 @@ def obtener_sucesion_fibonacci(n):
 
 def main():
     print(obtener_sucesion_fibonacci(180))
+    print(obtener_sucesion_fibonacci(1800))
 
 main()

@@ -17,5 +17,6 @@ def es_numero_primo(n):
 
 def main():
     print(es_numero_primo(401))
+    print(es_numero_primo(510217))
 
 main()

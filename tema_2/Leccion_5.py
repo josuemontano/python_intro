@@ -22,8 +22,8 @@ fibonacci.sort()
 fibonacci.insert(0, 1)
 print(fibonacci)
 
-fibonacci.index(21)
-fibonacci.count(1)
+print(fibonacci.index(21))
+print(fibonacci.count(1))
 
 fibonacci.extend([89, 144])
 print(fibonacci)

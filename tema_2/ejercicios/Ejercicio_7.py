@@ -6,7 +6,7 @@
 from math import cos, sin, pi
 
 
-def movimiento_parabolico(y0=0, V0=0, angulo=0):
+def movimiento_parabolico(y0=0, v0=0, angulo=0):
     t = 0
     x = 0
     y = y0
@@ -14,15 +14,15 @@ def movimiento_parabolico(y0=0, V0=0, angulo=0):
     tabla = []
     while y >= 0:
         tabla.append([x, y])
-        x = V0 * cos(theta) * t
-        y = y0 + V0 * sin(theta) * t - 0.5 * 9.81 * t ** 2
+        x = v0 * cos(theta) * t
+        y = y0 + v0 * sin(theta) * t - 0.5 * 9.81 * t ** 2
         t = t + 0.05
     
     return tabla
 
 
 def main():
-    tabla = movimiento_parabolico(y0=2, V0=10, angulo=30)
+    tabla = movimiento_parabolico(y0=2, v0=10, angulo=30)
     print(tabla)
 
 main()
