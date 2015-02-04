@@ -1,15 +1,22 @@
 # -*- coding: utf-8 -*-
-# Matplotlib
+# Herramientas para computación científica
 # Ejercicio 1
-# Gráfica de la función seno
+# Gráfica de f(x) = x*sin(x)
 
 from numpy import linspace, pi, sin
-from matplotlib import pyplot
+from matplotlib.pyplot import plot, show, xlabel, ylabel
 
 
-x = linspace(-pi, pi, 201)
+def f(x):
+    return x * sin(x)
 
-pyplot.plot(x, sin(x))
-pyplot.xlabel("ángulo [rad]")
-pyplot.ylabel("sin(x)")
-pyplot.show()
+
+def main():
+    t = linspace(-pi, pi, 200)
+    
+    plot(t, f(t))
+    xlabel("t [sec]")
+    ylabel("f(t) = t*sin(t)")
+    show()
+
+main()
