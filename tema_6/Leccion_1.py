@@ -19,7 +19,7 @@ class Libro(Base):
 
 
 def main():
-    engine = create_engine('sqlite:///books.sqlite')
+    engine = create_engine('sqlite:///books.sqlite', echo=True)
     Base.metadata.create_all(engine)
 
 if __name__ == '__main__':

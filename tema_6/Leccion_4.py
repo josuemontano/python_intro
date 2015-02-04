@@ -16,12 +16,17 @@ def main():
 
     libreria = Libro(isbn=1584884304, titulo='A Numerical Library in Java for Scientists', anio_publicacion=2003, editorial=editorial)
     session.add(libreria)
+    try:
+        session.commit()
+    except IntegrityError:
+        print("Error al persistir. Estos registros ya existen")
+        session.rollback()
 
-    session.commit()
-
+    print("Los siguientes libros son recientes y empiezan con 'Ma':")
     for libro in libros_recientes_por_titulo('Ma'):
         print(libro.titulo)
-    print("Existen {} libros de la editorial {}".format(cantidad_libros_editorial(editorial), editorial))
+    
+    print("\nExisten {} libros de la editorial {}".format(cantidad_libros_editorial(editorial), editorial))
 
 if __name__ == '__main__':
     main()
