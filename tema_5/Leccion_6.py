@@ -3,8 +3,8 @@
 # Lección 6
 # NumPy: Operaciones con matrices
 
-import numpy
 from numpy import array
+from scipy import sqrt, sin
 
 
 a = array([[1, 0, 1], [3, 0, 6]], float)
@@ -17,8 +17,8 @@ print(a / b)
 print(a % b)
 
 print(a ** b)
-print(numpy.sqrt(a))
+print(sqrt(a))
 
 print(a > 4)
 
-print(10 * numpy.sin(a))
+print(10 * sin(a))

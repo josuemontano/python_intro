@@ -1,12 +1,18 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 9
-# SymPy: Introducción
+# SciPy: Derivación numérica
 
-import sympy
+from scipy.misc import derivative
+from scipy import sin, exp, pi
 
 
-print(sympy.sqrt(2))
-print(sympy.sqrt(8))
+def f(t):
+    return exp(-t) * sin(t)
 
-print(sympy.sqrt(8) + 2)
+
+def main():
+    print("f'(0) =", derivative(f, 0))
+    print("f''(0) =", derivative(f, 0, n=2))
+
+main()

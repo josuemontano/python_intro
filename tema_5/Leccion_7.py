@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 7
-# NumPy: Álgebra lineal
+# SciPy: Álgebra lineal
 
 from numpy import array
-from numpy.linalg import *
+from scipy.linalg import *
 
 
 a = array([[5, 6, 2], [0, 4, 1], [3, 7, 1]])

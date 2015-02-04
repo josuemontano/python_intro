@@ -13,7 +13,7 @@ Herramientas para computaci&oacute;n cient&iacute;fica
 
 **Lecci&oacute;n 6.** NumPy: Operaciones con matrices
 
-**Lecci&oacute;n 7.** NumPy: &Aacute;lgebra lineal
+**Lecci&oacute;n 7.** SciPy: &Aacute;lgebra lineal
 
 **Lecci&oacute;n 8.** NumPy: Estad&iacute;stica
 

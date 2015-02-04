@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 11
-# SymPy: Cálculo diferencial e integral
+# SciPy: Constantes
 
-from sympy import *
+from scipy.constants import *
 
 
-x = symbols("x")
+print("Constante gravitacional",    G)
+print("Aceleracion de la gravedad", g)
+print("Velocidad de la luz",        c)
 
-fx = sin(x) * exp(x)
-print(limit(fx, x, 0))
+print("Masa del electron", m_e)
+print("Masa del proton",   m_p)
+print("Masa del neutron",  m_n)
 
-fx = sin(x) * exp(x)
-print(diff(fx, x))
+print("Constante de Planck", h)
+print("Constante magnetica", mu_0)
+print("Constante electrica", epsilon_0)
 
-fx = sin(x ** 2)
-print(integrate(fx, (x, -oo, oo)))
-
-fx = 1 / cos(x)
-print(series(fx, x))
-
-fx = cos(x) ** 2
-print(latex(Integral(fx, (x, 0, pi))))
+print(yotta)
+print(mega)
+print(nano)

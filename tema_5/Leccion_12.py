@@ -1,19 +1,15 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 12
-# SymPy: Álgebra lineal
+# Matplotlib: Gráfica simple
 
-from sympy import *
+import numpy
+from matplotlib import pyplot
 
 
-x = Symbol('x')
-y = Symbol('y')
-a = Matrix([[1, x], [y, 1]])
+x = numpy.linspace(0, 1, 200)
+y = numpy.sin(4 * numpy.pi * x) * numpy.exp(-5 * x)
 
-print(a)
-print(a ** 2)
+pyplot.plot(x, y)
 
-b = Matrix([[1, x], [x, 1]])
-print(b.eigenvals())
-print(b.eigenvects())
-print(b.det_LU_decomposition())
+pyplot.show()

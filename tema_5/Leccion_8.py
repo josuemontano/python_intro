@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
-# Lección 8
+# Lección 9
 # SciPy: Estadística
 
 from scipy import median, corrcoef, cov
