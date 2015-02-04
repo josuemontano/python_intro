@@ -1,20 +1,19 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 18
-# SymPy: Manipulación algebraica
+# SymPy: Álgebra lineal
 
-from sympy import expand, factor, simplify, symbols
+from sympy import *
 
 
-x, y = symbols("x y")
-print(x + y - x)
-print(x + 2 * y - 6 * x - 5 * x)
+x = Symbol('x')
+y = Symbol('y')
+a = Matrix([[1, x], [y, 1]])
 
-expr = (x + x * y) / x
-print(simplify(expr))
+print(a)
+print(a ** 2)
 
-expr = x + y
-expr = x * expr
-print(expr)
-print(expand(expr))
-print(factor(expand(expr)))
+b = Matrix([[1, x], [x, 1]])
+print(b.eigenvals())
+print(b.eigenvects())
+print(b.det_LU_decomposition())

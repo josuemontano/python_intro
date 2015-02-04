@@ -15,18 +15,26 @@ Herramientas para computaci&oacute;n cient&iacute;fica
 
 **Lecci&oacute;n 7.** SciPy: &Aacute;lgebra lineal
 
-**Lecci&oacute;n 8.** NumPy: Estad&iacute;stica
+**Lecci&oacute;n 8.** SciPy: Estad&iacute;stica
 
-**Lecci&oacute;n 9.** SymPy: Introducci&oacute;n
+**Lecci&oacute;n 9.** SciPy: Derivaci&oacute;n num&eacute;rica
 
-**Lecci&oacute;n 10.** SymPy: Manipulaci&oacute;n algebraica
+**Lecci&oacute;n 10.** SciPy: Integraci&oacute;n num&eacute;rica
 
-**Lecci&oacute;n 11.** SymPy: C&aacute;lculo diferencial e integral
+**Lecci&oacute;n 11.** SciPy: Constantes
 
-**Lecci&oacute;n 12.** SymPy: &Aacute;lgebra lineal
+**Lecci&oacute;n 12.** SciPy: Funciones especiales
 
 **Lecci&oacute;n 13.** Matplotlib: Gr&aacute;fica simple
 
 **Lecci&oacute;n 14.** Matplotlib: T&iacute;tulos
 
 **Lecci&oacute;n 15.** Matplotlib: Rellenado
+
+**Lecci&oacute;n 16.** SymPy: Introducci&oacute;n
+
+**Lecci&oacute;n 17.** SymPy: Manipulaci&oacute;n algebraica
+
+**Lecci&oacute;n 18.** SymPy: C&aacute;lculo diferencial e integral
+
+**Lecci&oacute;n 19.** SymPy: &Aacute;lgebra lineal

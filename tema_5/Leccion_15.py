@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 15
-# SymPy: Introducción
+# Matplotlib: Rellenado
 
-import sympy
+import numpy
+from matplotlib import pyplot
 
 
-print(sympy.sqrt(2))
-print(sympy.sqrt(8))
+x = numpy.linspace(0, 1, 200)
+y = numpy.sin(4 * numpy.pi * x) * numpy.exp(-5 * x)
 
-print(sympy.sqrt(8) + 2)
+pyplot.fill(x, y, 'r')
+pyplot.grid(True)
+
+pyplot.show()

@@ -1,24 +1,12 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 16
-# SymPy: Cálculo diferencial e integral
+# SymPy: Introducción
 
-from sympy import *
+import sympy
 
 
-x = symbols("x")
+print(sympy.sqrt(2))
+print(sympy.sqrt(8))
 
-fx = sin(x) * exp(x)
-print(limit(fx, x, 0))
-
-fx = sin(x) * exp(x)
-print(diff(fx, x))
-
-fx = sin(x ** 2)
-print(integrate(fx, (x, -oo, oo)))
-
-fx = 1 / cos(x)
-print(series(fx, x))
-
-fx = cos(x) ** 2
-print(latex(Integral(fx, (x, 0, pi))))
+print(sympy.sqrt(8) + 2)

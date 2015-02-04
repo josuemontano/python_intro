@@ -1,19 +1,24 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 17
-# SymPy: Álgebra lineal
+# SymPy: Cálculo diferencial e integral
 
 from sympy import *
 
 
-x = Symbol('x')
-y = Symbol('y')
-a = Matrix([[1, x], [y, 1]])
+x = symbols("x")
 
-print(a)
-print(a ** 2)
+fx = sin(x) * exp(x)
+print(limit(fx, x, 0))
 
-b = Matrix([[1, x], [x, 1]])
-print(b.eigenvals())
-print(b.eigenvects())
-print(b.det_LU_decomposition())
+fx = sin(x) * exp(x)
+print(diff(fx, x))
+
+fx = sin(x ** 2)
+print(integrate(fx, (x, -oo, oo)))
+
+fx = 1 / cos(x)
+print(series(fx, x))
+
+fx = cos(x) ** 2
+print(latex(Integral(fx, (x, 0, pi))))

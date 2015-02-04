@@ -1,12 +1,20 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 19
-# 
+# SymPy: Manipulación algebraica
 
-from sympy import *
+from sympy import expand, factor, simplify, symbols
 
-x = Symbol('x')
-ans = integrate(x/(x**2+2*x+1), x)
 
-print(ans)
-print(nsimplify(ans, [pi]))
+x, y = symbols("x y")
+print(x + y - x)
+print(x + 2 * y - 6 * x - 5 * x)
+
+expr = (x + x * y) / x
+print(simplify(expr))
+
+expr = x + y
+expr = x * expr
+print(expr)
+print(expand(expr))
+print(factor(expand(expr)))
