@@ -15,7 +15,6 @@ print(tupla[1])
 
 print("La tupla contiene el valor 2?", 2 in tupla)
 
-
 x = 10
 print(math.frexp(x))  # Tupla con la mantisa y exponente de x
 print(math.modf(x))   # Tupla con la parte fraccional y entera de x

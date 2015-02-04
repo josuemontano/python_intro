@@ -11,6 +11,10 @@ def f(x):
 def g(fu, x):
     return fu(x) * fu(x)
 
-if __name__ == '__main__':
-    numero = 10
+
+def main():
+    numero = 3
     print(g(f, numero))
+
+if __name__ == '__main__':
+    main()
