@@ -11,8 +11,8 @@ print(numpy.sin(x))
 print(numpy.cos(x))
 print(numpy.tan(x))
 
-print(numpy.exp(x))
-print(numpy.log(x))
+print(numpy.exp(2 + x))
+print(numpy.log(2 + x))
 
 print(type(numpy.inf))
 

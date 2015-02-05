@@ -15,16 +15,16 @@ def derivada(f, x):
     """ Devuelve la derivada de una funcion f dada
         en el punto x
     """
-    dx = 0.01
-    dy = f(x + dt) - f(x)
+    dx = 0.005
+    dy = f(x + dx) - f(x)
     return dy / dx
 
 
 def main():
-    t = linspace(-pi, pi, 200)
+    t = linspace(0, 3 * pi, 250)
 
     plot(t, f(t))
-    plot(t, derivada(f, t), '+')
+    plot(t, derivada(f, t), 'r')
     show()
 
 main()

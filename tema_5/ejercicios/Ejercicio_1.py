@@ -12,7 +12,7 @@ def f(x):
 
 
 def main():
-    t = linspace(-pi, pi, 200)
+    t = linspace(0, 3 * pi, 250)
     
     plot(t, f(t))
     xlabel("t [sec]")
