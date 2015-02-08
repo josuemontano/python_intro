@@ -3,10 +3,10 @@
 # Lección 2
 # NumPy: Colecciones (arrays)
 
-import numpy
+from numpy import array
 
 
-vector = numpy.array([3.1, 10, 8.94, 0.4, 2.4])
+vector = array([3.1, 10, 8.94, 0.4, 2.4])
 print(vector, type(vector))
 
 print(len(vector))

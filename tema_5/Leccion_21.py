@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 21
-# Plotly
+# Plotly: Introducción
 
 from numpy import linspace
 from scipy import sin, pi
@@ -10,9 +10,9 @@ from plotly.plotly import plot, sign_in
 
 
 def main():
-    x = linspace(0, 3 * pi, 300)
-    t = x * sin(x)
-    f = Scatter(x=x, y=t)
+    t = linspace(0, 3 * pi, 300)
+    x = t * sin(t)
+    f = Scatter(x=t, y=x)
 
     # Reemplazar por las credenciales de su cuenta en plot.ly
     sign_in('', '')

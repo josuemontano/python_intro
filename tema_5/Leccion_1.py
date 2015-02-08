@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 # Herramientas para computación científica
 # Lección 1
-# NumPy: Introducción
+# SciPy: Introducción
 
-import numpy
+import scipy
 
 
 x = 0
-print(numpy.sin(x))
-print(numpy.cos(x))
-print(numpy.tan(x))
+print(scipy.sin(x))
+print(scipy.cos(x))
+print(scipy.tan(x))
 
-print(numpy.exp(2 + x))
-print(numpy.log(2 + x))
+print(scipy.exp(2 + x))
+print(scipy.log(2 + x))
 
-print(type(numpy.inf))
+print(type(scipy.inf))
 
-print(numpy.pi)
-print(numpy.e)
+print(scipy.pi)
+print(scipy.e)
