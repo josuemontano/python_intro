@@ -11,7 +11,7 @@ Este curso persigue presentar una introducci&oacute;n agradable a la programaci&
 
 **Tema 4.** Programaci&oacute;n funcional.
 
-**Tema 5.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. IPython y SciPy.
+**Tema 5.** Herramientas para computaci&oacute;n cient&iacute;fica en Python. SciPy y relacionados.
 
 **Tema 6.** Conexi&oacute;n a bases de datos. SQLAlchemy.
 
