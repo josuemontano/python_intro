@@ -1,7 +1,7 @@
 Herramientas para computaci&oacute;n cient&iacute;fica
 ===
 
-**Lecci&oacute;n 1.** NumPy: Introducci&oacute;n
+**Lecci&oacute;n 1.** SciPy: Introducci&oacute;n
 
 **Lecci&oacute;n 2.** NumPy: Colecciones (arrays)
 
@@ -38,3 +38,7 @@ Herramientas para computaci&oacute;n cient&iacute;fica
 **Lecci&oacute;n 18.** SymPy: C&aacute;lculo diferencial e integral
 
 **Lecci&oacute;n 19.** SymPy: &Aacute;lgebra lineal
+
+**Lecci&oacute;n 21.** Plotly: Gr&aacute;ficos en coordenadas cartesianas
+
+**Lecci&oacute;n 22.** Plotly: Gr&aacute;ficos en coordenadas polares
