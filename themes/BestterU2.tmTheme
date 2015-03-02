@@ -188,6 +188,20 @@
         </dict>
         <dict>
             <key>name</key>
+            <string>Doctype</string>
+            <key>scope</key>
+            <string>meta.doctype, meta.tag.sgml-declaration.doctype, meta.tag.sgml.doctype</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>
+                </string>
+                <key>foreground</key>
+                <string>#333333</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>HTML: Tags</string>
             <key>scope</key>
             <string>entity.name.tag, punctuation.definition.tag</string>
