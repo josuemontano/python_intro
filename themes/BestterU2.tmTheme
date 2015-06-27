@@ -311,6 +311,19 @@
                 <string>#FFD646</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Markup: Italic</string>
+            <key>scope</key>
+            <string>markup.italic</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#FFD646</string>
+            </dict>
+        </dict>
     </array>
     <key>uuid</key>
     <string>b89757ac-ef99-41a5-8ebf-515fda343f9d</string>
