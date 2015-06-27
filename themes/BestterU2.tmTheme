@@ -3,12 +3,12 @@
 <!--
     Color key:
     #333333 : Grey comments
-    #dddddd : Light grey
+    #eeeeee : Light grey
     #111111 : Dark grey
     #212121 : Grey
     #acd151 : Green
     #d05e40 : Red
-    #acd151 : Blue
+    #509ACF : Celestial Blue
     #FFD646 : Find yellow
 -->
 <plist version="1.0">
@@ -25,9 +25,9 @@
                 <key>background</key>
                 <string>#212121</string>
                 <key>caret</key>
-                <string>#ddd</string>
+                <string>#eee</string>
                 <key>foreground</key>
-                <string>#ddd</string>
+                <string>#eee</string>
                 <key>invisibles</key>
                 <string>#212121</string>
                 <key>lineHighlight</key>
@@ -37,10 +37,8 @@
                 <key>selectionBorder</key>
                 <string>#111</string>
                 <key>inactiveSelection</key>
-                <string>#EDEDED</string>
-                <key>findHighlight</key>
                 <string>#FFD646</string>
-                <key>findHighlightBorder</key>
+                <key>findHighlight</key>
                 <string>#FFD646</string>
                 <key>findHighlightForeground</key>
                 <string>#111</string>
@@ -106,7 +104,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ddd</string>
+                <string>#eee</string>
             </dict>
         </dict>
         <dict>
@@ -126,7 +124,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ddd</string>
+                <string>#eee</string>
             </dict>
         </dict>
         <dict>
@@ -159,7 +157,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#acd151</string>
+                <string>#FFD646</string>
             </dict>
         </dict>
         <dict>
@@ -170,7 +168,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#4794e3</string>
+                <string>#509ACF</string>
             </dict>
         </dict>
         <dict>
@@ -188,14 +186,13 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Doctype</string>
+            <string>Markup DOCTYPE</string>
             <key>scope</key>
-            <string>meta.doctype, meta.tag.sgml-declaration.doctype, meta.tag.sgml.doctype</string>
+            <string>meta.doctype, meta.tag.sgml-declaration.doctype, meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml string</string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string>
-                </string>
+                <string></string>
                 <key>foreground</key>
                 <string>#333333</string>
             </dict>
@@ -223,7 +220,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#ddd</string>
+                <string>#9876AA</string>
             </dict>
         </dict>
         <dict>
@@ -278,7 +275,40 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#4794e3</string>
+                <string>#509ACF</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markdown: Heading</string>
+            <key>scope</key>
+            <string>markup.heading</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#d05e40</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markdown: Image</string>
+            <key>scope</key>
+            <string>meta.link.inline.markdown, meta.image.inline.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#509ACF</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markup: Bold</string>
+            <key>scope</key>
+            <string>markup.bold</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFD646</string>
             </dict>
         </dict>
     </array>
