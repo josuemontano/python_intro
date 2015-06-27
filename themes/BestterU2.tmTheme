@@ -50,7 +50,7 @@
             <key>name</key>
             <string>Comment</string>
             <key>scope</key>
-            <string>comment</string>
+            <string>comment, string.quoted.double.block, string.quoted.single.block</string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
