@@ -6,9 +6,11 @@
 fibonacci = [1, 1, 2, 3, 4, 5, 8, 13, 21, 34]
 
 print(fibonacci[0])
+print(fibonacci[-1])
 print(fibonacci[3:])
 print(fibonacci[:3])
 print(fibonacci[2:7])
+print(fibonacci[2:7:2])
 
 fibonacci[3:6] = []
 print(fibonacci)
