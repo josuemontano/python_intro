@@ -6,17 +6,21 @@
 from sympy import *
 
 
-x = symbols("x")
+def main():
+    x = symbols("x")
 
-fx = sin(x) * exp(x)
-print(limit(fx, x, 0))
-print(diff(fx, x))
+    fx = sin(x) * exp(x)
+    print(limit(fx, x, 0))
+    print(diff(fx, x))
 
-fx = sin(x ** 2)
-print(integrate(fx, (x, -oo, oo)))
+    fx = sin(x ** 2)
+    print(integrate(fx, (x, -oo, oo)))
 
-fx = 1 / cos(x)
-print(series(fx, x))
+    fx = 1 / cos(x)
+    print(series(fx, x))
 
-fx = cos(x) ** 2
-print(latex(Integral(fx, (x, 0, pi))))
+    fx = cos(x) ** 2
+    print(latex(Integral(fx, (x, 0, pi))))
+
+if __name__ == '__main__':
+    main()

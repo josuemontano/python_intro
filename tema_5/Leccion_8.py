@@ -6,8 +6,12 @@
 from scipy import median, corrcoef, cov
 
 
-a = [[1, 2, 3], [4, 5, 6]]
+def main():
+    a = [[1, 2, 3], [4, 5, 6]]
 
-print(median(a))
-print(corrcoef(a))
-print(cov(a))
+    print(median(a))
+    print(corrcoef(a))
+    print(cov(a))
+
+if __name__ == '__main__':
+    main()

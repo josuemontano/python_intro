@@ -6,18 +6,22 @@
 from scipy.constants import *
 
 
-print("Constante gravitacional",    G)
-print("Aceleracion de la gravedad", g)
-print("Velocidad de la luz",        c)
+def main():
+    print("Constante gravitacional", G)
+    print("Aceleracion de la gravedad", g)
+    print("Velocidad de la luz", c)
 
-print("Masa del electron", m_e)
-print("Masa del proton",   m_p)
-print("Masa del neutron",  m_n)
+    print("Masa del electron", m_e)
+    print("Masa del proton", m_p)
+    print("Masa del neutron", m_n)
 
-print("Constante de Planck", h)
-print("Constante magnetica", mu_0)
-print("Constante electrica", epsilon_0)
+    print("Constante de Planck", h)
+    print("Constante magnetica", mu_0)
+    print("Constante electrica", epsilon_0)
 
-print(yotta)
-print(mega)
-print(nano)
+    print(yotta)
+    print(mega)
+    print(nano)
+
+if __name__ == '__main__':
+    main()
